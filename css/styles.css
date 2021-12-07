@@ -16,7 +16,7 @@ header h2 {
   color: #cec8ff;
 }
 
-footer {
+.site-footer {
   background-image: linear-gradient(#cec8ff, white);
   padding: 20px 0;
 }
@@ -30,7 +30,7 @@ footer {
 
 .row-content {
   padding: 50px 0;
-  border-bottom: 1px ridge;
+  border-bottom: 1px ridge;  
   min-height: 200px;
 }
 
@@ -38,3 +38,4 @@ footer {
 .navbar {
   background-color: #901CAD;
 }
+
