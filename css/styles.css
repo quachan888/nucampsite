@@ -52,3 +52,13 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.carousel {
+  border: solid #5637DD;
+}
