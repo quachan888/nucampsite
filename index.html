@@ -23,14 +23,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+                    <img src="img/logo.png" alt="Nucamp logo" class="img-fluid">
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-                <div class="col col-md-4 col-xl-2 align-self-center">
-                    <a href="#reserveForm" class="btn bg-info btn-lg text-white mt-4 text-nowrap" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /> <strong> (206) 555-1234</strong>">Reserve Campsite</a>
+                <div class="col col-md-4 col-xl-2 mt-4">
+                    <a href="#reserveForm" class="btn bg-info btn-lg text-white text-nowrap" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /> <strong> (206) 555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top ">
         <div class="container">
-            <a href="#" class="navbar-brand"><img src="img/logo.png" height="30" width="30"></a>
+            <a href="#" class="navbar-brand"><img src="img/logo.png" alt="Nucamp logo" height="30" width="30"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/chrome-river.jpg"" alt=" Chrome River Campground" class="d-block w-100">
+                            <img src="img/chrome-river.jpg" alt="Chrome River Campground" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>Chrome River Campground</h3>
                                 <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.</p>
@@ -150,8 +150,7 @@
                     <img src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail thumbnail" class="d-flex mr-3 img-thumbnail">
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
-                            own reviews!</p>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
                     </div>
 
                 </div>
@@ -166,13 +165,10 @@
                 <div class="media">
                     <div class="media-body align-self-center">
                         <h3>React Lake Campground</h3>
-                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
-                            on
-                            the
-                            shores of the pristine React Lake is a favorite for fly fishers.</p>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
 
-                    <img src="img/react-lake-thumb.jpg" alt="" class="d-flex img-thumbnail ml-3">
+                    <img src="img/react-lake-thumb.jpg" alt="React Lake Campground" class="d-flex img-thumbnail ml-3">
                 </div>
 
             </div>
@@ -202,9 +198,10 @@
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="row form-group">
-                                <label for="numCampers" class="col-form-label col">Number of Campers</label>
-                                <div class="col-sm-6">
+                                <label for="numCampers" class="col-form-label col-sm-6">Number of Campers</label>
+                                <div class="col">
                                     <select name="numCampers" id="numCampers" class="form-control">
+                                        <option selected>Select...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -215,14 +212,14 @@
                                 </div>
                             </div>
                             <div class="row form-group">
-                                <label for="date" class="col-form-label col">Date</label>
-                                <div class="col-sm-6">
+                                <label for="date" class="col-form-label col-sm-6">Date</label>
+                                <div class="col">
                                     <input type="date" id="date" name="date" class="form-control">
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col">
-                                    <button class="btn btn-primary text-white" type="submit">Search</button>
+                                    <button class="btn btn-primary" type="submit">Search</button>
                                 </div>
                             </div>
                         </form>
@@ -248,10 +245,10 @@
                 </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
-                    <a href="http://instagram.com/" class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="http://facebook.com/" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="http://twitter.com/" class="btn-twitter btn btn-social-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i class="fa fa-youtube"></i></a>
+                    <a href="http://instagram.com/" class="btn btn-social-icon btn-instagram" alt="instagram icon"><i class="fa fa-instagram"></i></a>
+                    <a href="http://facebook.com/" class="btn btn-social-icon btn-facebook" alt="facebook icon"><i class="fa fa-facebook"></i></a>
+                    <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter" alt="twitter icon"><i class="fa fa-twitter"></i></a>
+                    <a href="http://youtube.com/" class="btn btn-social-icon btn-google" alt="google icon"><i class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
                     <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
