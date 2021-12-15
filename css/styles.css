@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Rubik&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -6,45 +8,33 @@ h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #0096db;
 }
 
-h2 {
-  color: #3046c5;
+
+
+
+.jumbotron h2 {
+  color: #a83da4;
 }
 
-header h2 {
-  color: #cec8ff;
-}
+
 
 .site-footer {
-  background-image: linear-gradient(#cec8ff, white);
-  padding: 20px 0;
+  background-color: black;
 }
 
-.jumbotron {
-  padding: 30px;
-  margin: 0;
-  color: white;
-  background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
+
+.site-footer h5 {
+  color: #0096db;
 }
 
 .row-content {
   padding: 50px 0;
-  border-bottom: 1px ridge;
   min-height: 200px;
 }
-
-
-.navbar {
-  background-color: #901CAD;
-}
-
-/* 
-.tab-content {
-  border: 1px solid #DDD;
-  border-top: none;
-  padding: 10px;
-} */
 
 a,
 a:hover {
@@ -59,6 +49,49 @@ a:hover {
   padding: 0.5rem;
 }
 
-.carousel {
-  border: solid #5637DD;
+.main {
+  background: url("https://source.unsplash.com/wTVr4HR4SBI") no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-position: 50% 50%;
+  width: 100%;
+}
+
+.main .display-1 {
+  color: #a83da4;
+  font-weight: bold;
+  text-shadow: 0px 0px 25px white;
+}
+
+.btnmain {
+  height: 45px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: #a83da4;
+  color: white;
+  font-weight: 700;
+  border-radius: 60px;
+}
+
+
+.reserveForm .card-header {
+  background-color: #0096db;
+}
+
+
+.reserveForm .btn {
+  background-color: #a83da4;
+}
+
+.navbar .nav-link {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+}
+
+.navbar .nav-link:hover {
+  color: #a83da4 !important;
 }
