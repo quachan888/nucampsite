@@ -5,16 +5,15 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Bootstrap CSS -->
-        <script type="text/javascript" nonce="c709eee9a8064c18bcfaeabdf45" src="//local.adguard.org?ts=1638683980608&amp;type=content-script&amp;dmn=learn.nucamp.co&amp;app=com.google.Chrome.helper&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1&amp;sbe=0"></script>
-        <script type="text/javascript" nonce="c709eee9a8064c18bcfaeabdf45" src="//local.adguard.org?ts=1638683980608&amp;name=AdGuard%20Extra&amp;type=user-script"></script>
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-        <!-- Additional CSS must be placed after Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="css/styles.css" />
+        <!-- endbuild -->
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
@@ -183,8 +182,10 @@
         </footer>
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <!-- build:js js/main.js -->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- endbuild -->
     </body>
 </html>
