@@ -35,11 +35,63 @@
                         <h2>a better way to camp</h2>
                     </div>
                     <div class="col col-md-4 col-xl-2 mt-4">
-                        <button class="btn bg-info btn-lg text-white text-nowrap" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</button>
+                        <button class="btn btn-info btn-lg text-white text-nowrap" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</button>
                     </div>
                 </div>
             </div>
         </header>
+
+        <!-- Reserve Modal -->
+        <div class="modal fade" id="reserveModal" role="dialog" tabindex="0">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-info text-white">
+                        <h3 class="modal-title">Reserve a Campsite</h3>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="row form-group">
+                                    <label for="numCampers" class="col-form-label col-sm-6">Number of Campers</label>
+                                    <div class="col">
+                                        <select name="numCampers" id="numCampers" class="form-control">
+                                            <option selected>Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="date" class="col-form-label col-sm-6">Date</label>
+                                    <div class="col">
+                                        <input type="date" id="date" name="date" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="siteType" class="col-form-label col-sm-6">Campsite Type</label>
+                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success active"> <input type="radio" name="siteType" id="siteTent" autocomplete="off" value="tent" />Tent </label>
+                                        <label class="btn btn-primary"> <input type="radio" name="siteType" id="siteRV" autocomplete="off" value="rv" />RV </label>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col">
+                                        <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button class="btn btn-primary" type="submit">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -64,11 +116,49 @@
                         </li>
                     </ul>
                     <span class="navbar-text ml-auto">
-                        <a role="button" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"> Login</i></a>
+                        <a role="button" data-toggle="modal" data-target="#loginModal" id="loginButton"><i class="fa fa-sign-in"> Login</i></a>
                     </span>
                 </div>
             </div>
         </nav>
+
+        <!-- Modal for login -->
+        <div class="modal fade" id="loginModal" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Login</h3>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label for="loginEmail" class="sr-only">Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email" />
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="loginEPassword" class="sr-only">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginEmail" placeholder="Password" />
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="remember" class="form-check-input" />
+                                            <label for="remember" class="form-check-label">Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- MAIN CONTAINTER -->
         <div class="container">
@@ -181,10 +271,10 @@
                     </div>
                     <div class="col-6 col-sm-5 text-center">
                         <h5>Social</h5>
-                        <a href="http://instagram.com/" class="btn btn-social-icon btn-instagram" alt="instagram icon"><i class="fa fa-instagram"></i></a>
-                        <a href="http://facebook.com/" class="btn btn-social-icon btn-facebook" alt="facebook icon"><i class="fa fa-facebook"></i></a>
-                        <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter" alt="twitter icon"><i class="fa fa-twitter"></i></a>
-                        <a href="http://youtube.com/" class="btn btn-social-icon btn-google" alt="google icon"><i class="fa fa-youtube"></i></a>
+                        <a href="http://instagram.com/" class="btn btn-social-icon btn-instagram" alt="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="http://facebook.com/" class="btn btn-social-icon btn-facebook" alt="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter" alt="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="http://youtube.com/" class="btn btn-social-icon btn-google" alt="google"><i class="fa fa-youtube"></i></a>
                     </div>
                     <div class="col-sm-4 text-center">
                         <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
@@ -193,96 +283,6 @@
                 </div>
             </div>
         </footer>
-
-        <!-- Reserve Modal -->
-        <div class="modal fade" id="reserveModal" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-info text-white">
-                        <h3 class="modal-title">Reserve a Campsite</h3>
-                        <button class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <form>
-                                <div class="row form-group">
-                                    <label for="numCampers" class="col-form-label col-sm-6">Number of Campers</label>
-                                    <div class="col">
-                                        <select name="numCampers" id="numCampers" class="form-control">
-                                            <option selected>Select...</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <label for="date" class="col-form-label col-sm-6">Date</label>
-                                    <div class="col">
-                                        <input type="date" id="date" name="date" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <label for="siteType" class="col-form-label col-sm-6">Campsite Type</label>
-                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-success active"> <input type="radio" name="siteType" id="siteTent" autocomplete="off" value="tent" />Tent </label>
-                                        <label class="btn btn-primary"> <input type="radio" name="siteType" id="siteRV" autocomplete="off" value="rv" />RV </label>
-                                    </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <div class="col">
-                                        <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                        <button class="btn btn-primary" type="submit">Search</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal for login -->
-        <div class="modal fade" id="loginModal" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title">Login</h3>
-                        <button class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label for="loginEmail" class="sr-only">Email address</label>
-                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email" />
-                                    </div>
-                                    <div class="form-group col-12">
-                                        <label for="loginEPassword" class="sr-only">Password</label>
-                                        <input type="password" class="form-control form-control-sm" id="loginEmail" placeholder="Password" />
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-check">
-                                            <input type="checkbox" id="remember" class="form-check-input" />
-                                            <label for="remember" class="form-check-label">Remember me</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                    <button class="btn btn-primary btn-sm ml-1">Sign in</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
         <!-- build:js js/main.js -->
